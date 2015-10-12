@@ -12,7 +12,7 @@ APK下载地址 [云资源APK](http://pan.baidu.com/share/link?shareid=175314390
 
 ## APP截图
 
-![joy.png](http://img1.ph.126.net/iAw7wQWf6B6_MtEkVqHkYg==/6630643354212901366.jpg)
+![joy.png](http://img1.ph.126.net/Gujhjr0K-lEhAmB4_cClpQ==/6630734613678014239.jpg)
 ![joy.png](http://img1.ph.126.net/Z2W29hEes4f6feLfP4XfxQ==/6619066596282626107.jpg)
 ![joy.png](http://img1.ph.126.net/qpbrXbedMy2GzwjivqCHqg==/6630525706468034365.jpg)
 
