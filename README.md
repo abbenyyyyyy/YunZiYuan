@@ -30,40 +30,40 @@ APK下载地址 [云资源APK](http://pan.baidu.com/share/link?shareid=175314390
 基本基于‘MVC模式’进行设计，Application类和业务处理类均采用‘单例模式’以避免CG回收后失去其实例以及节约系统资源。
 * app——Application Activity 的顶级父类
     
-	MyApplication——继承Application，以便用HashMap存储全局变量``Movies``；
+	1.MyApplication——继承Application，以便用HashMap存储全局变量``Movies``；
 	
-	AllScrollView——自定义的scrollView,复写OnLayout方法以便实现水平两列图片墙高度不对称；
+	2.AllScrollView——自定义的scrollView,复写OnLayout方法以便实现水平两列图片墙高度不对称；
 	
-	OpeningActivity——启动APP时候的启动画面，用一个线程控制更新客户端的资源xml文件以及跳转到``MainActivity``；
+	3.OpeningActivity——启动APP时候的启动画面，用一个线程控制更新客户端的资源xml文件以及跳转到``MainActivity``；
 	
-	MainActivity——主Activity，布局为屏幕上方一个FrameLayout，底部一个RadioGroup，通过对RadioGroup的监听实现Fragment对FrameLayout的填充；
+	4.MainActivity——主Activity，布局为屏幕上方一个FrameLayout，底部一个RadioGroup，通过对RadioGroup的监听实现Fragment对FrameLayout的填充；
 	
-	MovieActivity——显示电影具体信息的Activity；
+	5.MovieActivity——显示电影具体信息的Activity；
 	
-	SearchActivity——点击``MainActivity``ActionBar中的``SearchView``后跳转的搜索电影Activity；
+	6.SearchActivity——点击``MainActivity``ActionBar中的``SearchView``后跳转的搜索电影Activity；
 	
-	ClearCacheActivity——点击actionbar中清除缓存后跳转的Activity，显示清除缓存的提示语并为了避免在清除缓存后还下载电影封面所建立的Activity。
+	7.ClearCacheActivity——点击actionbar中清除缓存后跳转的Activity，显示清除缓存的提示语并为了避免在清除缓存后还下载电影封面所建立的Activity。
 	
 * modle——数据层,数据模型
     
-	Movie——存储一部电影信息的模型：电影类型、名字、封面URL、简介、截图URL、百度云URL、百度云提取码；
+	1.Movie——存储一部电影信息的模型：电影类型、名字、封面URL、简介、截图URL、百度云URL、百度云提取码；
 	
-	Movies——存储某一特定类电影信息的模型，上面各种的数组。
+	2.Movies——存储某一特定类电影信息的模型，上面各种的数组。
 	
 * view——视图层，在这里Menu、Fragment和Activity的布局文件没有列出
 	
-	FirstFragment——主Activity中的第一页，对应主Activity底部RadioGroup第一个RadioButton，对应“所有电影”;
+	1.FirstFragment——主Activity中的第一页，对应主Activity底部RadioGroup第一个RadioButton，对应“所有电影”;
 	
-	SecondFragment——主Activity中的第二页，对应主Activity底部RadioGroup第二个RadioButton，对应“欧美电影”;
+	2.SecondFragment——主Activity中的第二页，对应主Activity底部RadioGroup第二个RadioButton，对应“欧美电影”;
 	
-	ThirdFragment——主Activity中的第三页，对应主Activity底部RadioGroup第三个RadioButton，对应“日韩电影”;
+	3.ThirdFragment——主Activity中的第三页，对应主Activity底部RadioGroup第三个RadioButton，对应“日韩电影”;
 	
-	FourthFragment——主Activity中的第四页，对应主Activity底部RadioGroup第四个RadioButton，对应“国产电影”。
+	4.FourthFragment——主Activity中的第四页，对应主Activity底部RadioGroup第四个RadioButton，对应“国产电影”。
 * controller——业务处理
 	
-	XmlParser——下载、更新电影资源信息以及解析客户端的电影资源信息到模型，服务端的电影资源信息保存格式为``xml``；
+	1.XmlParser——下载、更新电影资源信息以及解析客户端的电影资源信息到模型，服务端的电影资源信息保存格式为``xml``；
 	
-	ImageLoader——实现图片的缓存，通过``BitmapFactory.Option``按采样率来缩放图片以适应屏幕的宽度。
+	2.ImageLoader——实现图片的缓存，通过``BitmapFactory.Option``按采样率来缩放图片以适应屏幕的宽度。
 
 ### 客户端文件存储方式与位置
 
