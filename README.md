@@ -1,9 +1,9 @@
 # 我的第一个GitHub项目
 
-这是项目 [云资源](https://github.com/abbenyyyyyy/YunZiYuan.git) ，
+这是Android项目 [云资源](https://github.com/abbenyyyyyy/YunZiYuan.git) ，
 欢迎访问。
 
-
+APK下载地址 [云资源APK](http://pan.baidu.com/share/link?shareid=1753143903&uk=1946758570&from=homehot)
 
 ## 简介
 
@@ -43,11 +43,13 @@
 	SearchActivity——点击``MainActivity``ActionBar中的``SearchView``后跳转的搜索电影Activity；
 	
 	ClearCacheActivity——点击actionbar中清除缓存后跳转的Activity，显示清除缓存的提示语并为了避免在清除缓存后还下载电影封面所建立的Activity。
+	
 * modle——数据层,数据模型
     
 	Movie——存储一部电影信息的模型：电影类型、名字、封面URL、简介、截图URL、百度云URL、百度云提取码；
 	
 	Movies——存储某一特定类电影信息的模型，上面各种的数组。
+	
 * view——视图层，在这里Menu、Fragment和Activity的布局文件没有列出
 	
 	FirstFragment——主Activity中的第一页，对应主Activity底部RadioGroup第一个RadioButton，对应“所有电影”;
@@ -61,9 +63,11 @@
 	
 	XmlParser——下载、更新电影资源信息以及解析客户端的电影资源信息到模型，服务端的电影资源信息保存格式为``xml``；
 	
-	ImageLoader——实现图片的缓存，通过``BitmapFactory.Option``按采样率来缩放图片以适应屏幕的宽度
+	ImageLoader——实现图片的缓存，通过``BitmapFactory.Option``按采样率来缩放图片以适应屏幕的宽度。
 
 ### 客户端文件存储方式与位置
+
+客户端保存的文件有三种：1.电影资讯文件（XML文件）；2.电影资讯文件的版本号文件（txt文件）；3.电影封面文件（JPG文件）。
 
 为了减少流量请求，所以电影资讯采用XML文件保存在客户端，下面为一部电影的资讯保存例子：
 
@@ -102,7 +106,7 @@
 
 * 图片的缓存实现，避免OOM
 
-1. 图片的内存缓存是使用了LRU算法，另外``AllScrollView.loadMoreImages()``方法实现整页加载避免加载图片次数；
+1. 图片的内存缓存是使用了LRU算法，另外``AllScrollView.loadMoreImages()``方法实现整页加载以减少加载图片次数；
 2. 还有通过``AllScrollView.checkVisibility()``进行图片可见性检查，检查目前照片墙上的所有图片，判断出哪些是可见的，哪些是不可见。然后将那些不可见的图片都替换成一张空图，这样就可以保证APP始终不会占用过高的内存。当这些图片又重新变为可见的时候，
 只需要再从LruCache中将这些图片重新取出即可。
 3. 当然图片在加载到ImageView前通过``ImageLoader.decodeSampledBitmapFromResource``进行压缩适配，其基于``BitmapFactory.Option``按采样率来缩放图片以适应屏幕的宽度。
@@ -111,3 +115,7 @@
 
 这是我第一个自己构想并实现的Android项目，在实现的过程学到很多，也遇到挺多困难，包括通过学习Python爬虫收集电影资源、查看Android Developer理解View的工作流程以便实现自定义ScrollView，查看Android Developer实现``SearchView``等等，
 但是都一一克服，挺有满足感的。另外基于时间的问题，代码的重构，还有许多构想还没在这个项目实现，如线程池的引入，DiskLruCache的实现等等。
+
+### 联系方式
+
+Email:407523391@qq.com
