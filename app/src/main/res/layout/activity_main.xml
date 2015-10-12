@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/id_content"
+        android:layout_above="@+id/mRadioGroup"
+        ></FrameLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/mRadioGroup"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <RadioButton
+            android:id="@+id/first_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:checked="true"
+            android:text="@string/all_movies"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@color/tab_selector_text_color"
+            />
+        <RadioButton
+            android:id="@+id/second_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/western_movies"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@color/tab_selector_text_color"
+            />
+        <RadioButton
+            android:id="@+id/third_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/japanAndKorea_movies"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@color/tab_selector_text_color"
+            />
+        <RadioButton
+            android:id="@+id/fourth_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/chinese_movies"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@color/tab_selector_text_color"
+            />
+    </RadioGroup>
+
+
+</RelativeLayout>

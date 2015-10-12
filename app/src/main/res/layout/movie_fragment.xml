@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 电影具体页面的布局文件-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:text="Test"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/name"
+                android:background="#9966cc" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/name"
+                android:padding="5dp"
+                android:text="TestType"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/type"
+                android:background="#9966cc" />
+
+            <ImageView
+                android:id="@+id/imageOfMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/type"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/summaryOfMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageOfMovie"
+                android:text="New Text"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/baiDuYun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/summaryOfMovie"
+                android:text="@string/baiduyun_Link" />
+
+            <TextView
+                android:id="@+id/yunPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/baiDuYun"
+                android:layout_below="@id/summaryOfMovie"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/baiDuYun"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:textIsSelectable="true"
+                 />
+
+            <Button
+                android:id="@+id/printscreenOfVisibity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/baiDuYun"
+                android:text="@string/displayprint"/>
+
+            <ImageView
+                android:id="@+id/printscreen"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/printscreenOfVisibity"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

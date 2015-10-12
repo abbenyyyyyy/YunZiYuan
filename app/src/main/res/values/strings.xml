@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">云资源</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="all_movies">所有电影</string>
+    <string name="western_movies">欧美电影</string>
+    <string name="japanAndKorea_movies">日韩电影</string>
+    <string name="chinese_movies">国产电影</string>
+    <string name="baiduyun_Link">百度云链接</string>
+    <string name="displayprint">显示电影截图</string>
+    <string name="about">关于</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="determine">确定</string>
+    <string name="cancel">取消</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    <string name="detail_clear_cache">若清除缓存，再次打开云资源时将要重新下载电影内容，请问是否清除云资源缓存？</string>
+    <string name="detail_about">&#160;&#160;&#160;&#160;云资源是一个向广大用户提供电影的信息服务平台，通过引用网络信息技术为用户提供电影信息及其他各类互联网在线服务。元资源本身不直接上传、提供内容，对用户传输内容不做任何修改或编辑。云资源一贯高度重视知识产权保护并遵守中国各项知识产权法律、法规和具有约束力的规范性文件。重视正版，打击盗版。根据法律、法规和规范性文件要求，云资源制定了旨在保护权利人的合法权益的措施和步骤，当权利人发现有云资源其服务侵犯其合法权益时，权利人应事先向云资源发出"权利通知"，云资源将根据中国法律法规和政府规范性文件采取相应的措施予以处理。\n&#160;&#160;&#160;&#160;作者邮箱：ben714656@163.com</string>
+</resources>
