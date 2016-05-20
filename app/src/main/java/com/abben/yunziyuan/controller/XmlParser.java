@@ -31,8 +31,8 @@ import java.util.List;
 public class XmlParser {
     private static OSSService ossService;
     private static OSSBucket bucket;
-    private final static String ACCESS_KEY ="0LawaTViKKt9knlw";
-    private final static String SCRECT_KEY ="t2LLn0Lq9kHXAcNatjF78MxWwzEObL";
+    private final static String ACCESS_KEY = "tOxJQ1E4PTbzti4M";
+    private final static String SCRECT_KEY = "wDFrnAku7rb4PQoGorVIMuG4kFxYGK";
     private final static String BUCKET_NAME ="abben-version";
     private static XmlParser xmlParser = null;
 
