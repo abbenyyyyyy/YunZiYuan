@@ -1,5 +1,7 @@
 # 我的第一个GitHub项目
 
+此项目不再维护，请直接查看改进版[云资源ESR](https://github.com/abbenyyyyyy/yunziyuanESR) 
+
 这是Android项目 [云资源](https://github.com/abbenyyyyyy/YunZiYuan.git) ，
 欢迎访问。
 
